@@ -137,7 +137,7 @@ class Table(Block):
     def caption(self, value):
         if value is None:
             value = Caption()
-        self._caption = checktype(value, Caption)
+        self._caption = check_type(value, Caption)
         self._caption.parent = self
         self._caption.location = 'caption'
 
